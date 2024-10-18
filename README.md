@@ -414,3 +414,11 @@ Another simple (but costly) solution is to scale vertically, by upgrading the da
 Scaling horizontally can be another possible solution, when the data can be sharded across multiple database servers. Even adding read-replicas of the database might help, if many clients are accessing the data concurrently. Also consider using a distributed database system that Superset supports, like ClickHouse, Druid, Pinot.
 
 Many modern data warehouses support materialized views, which can precompute and store query results. This is another potential solution that can significantly speed up repetitive queries without moving data to a separate system.
+
+## Conclusion
+
+In blog post we explored a spectrum of optimization techniques to make dashboards faster, each with its own strengths and trade-offs. From simple caching to orchestrating the precomputation of aggregations, the path to more performant dashboards is one of trade-offs.
+
+While caching offers quick wins for static dashboards, it falls short for highly interactive scenarios. Sampling provides a balance between speed and accuracy, albeit with some compromises in data precision. Precomputing aggregations emerges as a powerful solution, dramatically reducing query times while maintaining data integrity, though it requires more upfront planning and ongoing maintenance.
+
+As we've seen, there's no one-size-fits-all approach; the best solution often involves a combination of techniques tailored to your specific use case, data volume, and user needs. Remember, the goal isn't just to make dashboards faster, but to create a seamless, responsive experience that empowers all users in the organization to derive insights quickly and effortlessly.
