@@ -403,7 +403,7 @@ How does performance look querying our summary table? Here’s a chart built on 
 
 ![Screenshot 2024-10-18 at 08-35-25 Superset.png](images/Screenshot_2024-10-18_at_08-35-25_Superset.png)
 
-The chart is identical to the initial one, that queried Trino directly, but it only took 0.56 seconds to render — an 80x improvement! Other variations of the query are equally fast: we can filter by a specific country and group by only the market segment, for example, and the chart will render under a second. All it required was some planning and a scheduler.
+The chart is identical to the initial one, that queried Trino directly, but it only took 0.56 seconds to render — an 80x improvement! Other variations of the query are equally fast: we can filter by a specific country and group by only the market segment, for example, and the chart will still render under a second. All it required was some planning and a scheduler.
 
 ## Other solutions
 
