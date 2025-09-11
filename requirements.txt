@@ -6,7 +6,7 @@ pandas==2.2.3
 psycopg2-binary==2.9.10
 python-dateutil==2.9.0.post0
 pytz==2024.2
-requests==2.32.3
+requests==2.32.4
 ruff==0.6.9
 six==1.16.0
 SQLAlchemy==2.0.36
